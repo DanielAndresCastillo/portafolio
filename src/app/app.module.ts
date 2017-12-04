@@ -3,8 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+
 //Rutas
 import { app_routing } from "./app.routes";
+
+//Servicios
+import { InformacionService} from "./services/informacion.service";
 
 
 //Componentes
@@ -31,7 +35,9 @@ import { ProductoComponent } from './components/producto/producto.component';
     HttpModule,
     app_routing
   ],
-  providers: [],
+  providers: [
+    InformacionService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
