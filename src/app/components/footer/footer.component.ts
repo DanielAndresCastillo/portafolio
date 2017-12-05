@@ -6,12 +6,9 @@ import { InformacionService } from "../../services/informacion.service";
   templateUrl: './footer.component.html',
   styles: []
 })
+
 export class FooterComponent {
-
 	anio:number = new Date().getFullYear();
-
 	constructor (public _is:InformacionService){
-	
 	}
-
 }
